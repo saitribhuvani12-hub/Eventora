@@ -30,7 +30,7 @@ export async function api(method, url, body) {
 
   let res;
   try {
-    res = await fetch("/api" + url, { method, headers, body: payload });
+    res = await fetch("https://eventora-6967.onrender.com/api" + url, { method, headers, body: payload });
   } catch {
     return {
       ok: false,
